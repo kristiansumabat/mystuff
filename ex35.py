@@ -31,7 +31,15 @@ while True:
     elif choice == "taunt bear" and not bear_moved:
         print "The bear has moved from the door. You can move through it now"
         bear_moved = True
+    elif choice == "taint bear" and bear_moved:
+        dead("The bear gets pissed off and chews off your leg")
     elif choice == "open door" and bear_moved:
         gold_room()
     else:
         print "I got no idea what that means"
+
+def cthulhu_room():
+    print "here you see the great evil Cthulhu"
+    print "he, it whatever stares at you and you go insane"
+    print
+
